@@ -101,13 +101,6 @@ header {
 
 .lang-mob {
     display: none;
-    align-items: center;
-}
-
-.lang-mob i {
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 7px;
 }
 
 .mode {
@@ -123,13 +116,6 @@ header {
 
 .mode-mob {
     display: none;
-    align-items: center;
-}
-
-.mode-mob i {
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 7px;
 }
 
 .main a:hover {
@@ -203,13 +189,28 @@ header {
     .lang {
         display: none;
     }
+
     .lang-mob {
         display: flex;
+        align-items: center;
+    }
+    
+    .lang-mob i {
+        color: var(--main-color);
+        font-size: 28px;
+        margin-right: 2px;
     }
     .mode {
         display: none;
     }
     .mode-mob {
         display: flex;
+        align-items: center;
+    }
+    
+    .mode-mob i {
+        color: var(--main-color);
+        font-size: 28px;
+        margin-right: 2px;
     }
 }
