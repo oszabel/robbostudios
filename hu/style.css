@@ -103,6 +103,20 @@ header {
     transition: all .50s ease;
 }
 
+.lightmode header .logo span img {
+    color: var(--text-color);
+    width: 111px;
+    font-weight: 600;
+}
+
+.lightmode header .logo span .logo-light {
+    display: none;
+}
+
+.lightmode header .logo span .logo-dark {
+    display: flex;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -118,6 +132,20 @@ header {
     color: var(--text-color);
     font-size: 1.7rem;
     font-weight: 600;
+}
+
+.logo span img {
+    color: var(--text-color);
+    width: 111px;
+    font-weight: 600;
+}
+
+.logo-light {
+    display: flex;
+}
+
+.logo-dark {
+    display: none;
 }
 
 .navbar {
@@ -234,7 +262,7 @@ header {
         top: 100%;
         right: -100%;
         width: 50%;
-        height: 42vh;
+        height: 30vh;
         /* background-color: rgba(70, 70, 70, 0.8);
         backdrop-filter: saturate(180%) blur(60px); */
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
