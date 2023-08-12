@@ -34,6 +34,74 @@ header {
     transition: all .50s ease;
 }
 
+.lightmode {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.lightmode header .logo span {
+    color: var(--bg-color);
+}
+
+.lightmode header .navbar a {
+    color: var(--bg-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    /* padding: 5px 0; */
+    /* margin: 0px 30px; */
+    margin-right: 25px;
+    margin-left: 10px;
+    transition: all .50s ease;
+}
+
+.lightmode header .navbar a:hover {
+    color: var(--main-color);
+}
+
+.lightmode header .navbar a.active {
+    color: var(--main-color);
+}
+
+.lightmode header .main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--bg-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50sec ease;
+}
+
+.lightmode header .main .lang {
+    display: flex;
+    align-items: center;
+}
+
+.lightmode header .main .lang-mob {
+    display: none;
+}
+
+.lightmode header .main .lang i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+    transition: all .50sec ease;
+
+}
+
+.lightmode header .main a:hover {
+    color: var(--main-color);
+    transition: all .50sec ease;
+}
+
+.lightmode header #menu-icon {
+    color: var(--bg-color);
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+    transition: all .50s ease;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -97,6 +165,8 @@ header {
     color: var(--main-color);
     font-size: 28px;
     margin-right: 7px;
+    transition: all .50sec ease;
+
 }
 
 .lang-mob {
@@ -120,6 +190,8 @@ header {
 
 .main a:hover {
     color: var(--main-color);
+    transition: all .50sec ease;
+
 }
 
 #menu-icon {
@@ -149,6 +221,13 @@ header {
         display: block;
         transition: all .50s ease;
     }
+
+    .lightmode header #menu-icon {
+        color: var(--bg-color);
+        display: block;
+        transition: all .50s ease;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -170,6 +249,7 @@ header {
         border-radius: 10px;
         transition: all .50s ease;
     }
+    
     .navbar a {
         display: block;
         margin: 12px 0;
@@ -209,6 +289,20 @@ header {
     }
     
     .mode-mob i {
+        color: var(--main-color);
+        font-size: 28px;
+        margin-right: 2px;
+    }
+    .lightmode header .main .lang {
+        display: none;
+    }
+
+    .lightmode header .main .lang-mob {
+        display: flex;
+        align-items: center;
+    }
+    
+    .lightmode header .main .lang-mob i {
         color: var(--main-color);
         font-size: 28px;
         margin-right: 2px;

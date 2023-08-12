@@ -19,6 +19,6 @@ light.addEventListener('click',function(){
     body.classList.toggle('lightmode');
     // document.getElementById('light').innerHTML = 'Sötét mód';
     localStorage.setItem("light",body.classList);
-    document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Sötét Mód':'Világos Mód';
-    // document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Dark mode':'Light mode';
+    // document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Sötét mód':'Világos mód';
+    document.querySelector('.light').innerHTML = body.classList.contains('lightmode')? 'Dark mode':'Light mode';
 });
